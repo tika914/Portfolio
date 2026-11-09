@@ -1,4 +1,15 @@
 li {
   line-height: 1.0; 
 }
- 
+
+ul {
+    border: 2px solid #333;   /* 線の太さ・種類・色（黒っぽいグレー） */
+    padding: 20px 20px 20px 40px; /* 枠の内側の余白（上 右 下 左） */
+    border-radius: 8px;       /* 角を少し丸くする（不要なら削除） */
+    background-color: #fafafa; /* 背景色（不要なら削除） */
+}
+
+li {
+    line-height: 1.8;
+    margin-bottom: 0.5em;
+}
