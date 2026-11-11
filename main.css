@@ -1,15 +1,24 @@
-li {
-  line-height: 1.0; 
+/* 枠線と背景色を div.box 全体に適用 */
+.box {
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
 }
 
-ul {
-    border: 2px solid #333;   /* 線の太さ・種類・色（黒っぽいグレー） */
-    padding: 20px 20px 20px 40px; /* 枠の内側の余白（上 右 下 左） */
-    border-radius: 8px;       /* 角を少し丸くする（不要なら削除） */
-    background-color: #fafafa; /* 背景色（不要なら削除） */
+/* 見出しの上の余白を消してスッキリさせる */
+.box h2 {
+  margin-top: 0;
 }
 
+/* リスト自体のデフォルト余白を調整 */
+.box ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+/* 行間とアイテム間の余白 */
 li {
-    line-height: 1.8;
-    margin-bottom: 0.5em;
+  line-height: 1.8;
+  margin-bottom: 0.5em;
 }
