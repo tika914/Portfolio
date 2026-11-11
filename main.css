@@ -22,3 +22,23 @@ li {
   line-height: 1.8;
   margin-bottom: 0.5em;
 }
+
+
+.work-item a[href*="colab"] {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;       /* ボタンの内側の余白 */
+  font-size: 18px;          /* 文字の大きさ */
+  font-weight: bold;        /* 太字 */
+  color: #ffffff;           /* 文字の色（白） */
+  background-color: #4CAF50;/* ボタンの背景色（緑） */
+  text-decoration: none;    /* 下線を消す */
+  border-radius: 8px;       /* 角を丸くする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: all 0.2s ease;
+}
+
+.work-item a[href*="colab"]:hover {
+  background-color: #45a049; /* 少し濃い緑になる */
+  transform: translateY(-2px); /* 少し浮き上がる */
+}
