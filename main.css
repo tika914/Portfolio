@@ -27,18 +27,49 @@ li {
 .work-item a[href*="colab"] {
   display: inline-block;
   margin-top: 15px;
-  padding: 12px 24px;       /* ボタンの内側の余白 */
-  font-size: 18px;          /* 文字の大きさ */
-  font-weight: bold;        /* 太字 */
-  color: #ffffff;           /* 文字の色（白） */
-  background-color: #4CAF50;/* ボタンの背景色（緑） */
-  text-decoration: none;    /* 下線を消す */
-  border-radius: 8px;       /* 角を丸くする */
+  padding: 12px 24px;      
+  font-size: 18px;        
+  color: #ffffff;          
+  background-color: #4CAF50;
+  text-decoration: none;    
+  border-radius: 8px;       
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
   transition: all 0.2s ease;
 }
 
 .work-item a[href*="colab"]:hover {
-  background-color: #45a049; /* 少し濃い緑になる */
-  transform: translateY(-2px); /* 少し浮き上がる */
+  background-color: #45a049;
+  transform: translateY(-2px); 
+}
+
+/* モーダル（拡大表示の背景） */
+.modal {
+  display: none; /* 最初は隠しておく */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* 暗い背景 */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 拡大された画像 */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* 右上の閉じるボタン（×） */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
